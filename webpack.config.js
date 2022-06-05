@@ -12,7 +12,7 @@ module.exports = {
     process.env.NODE_ENV === "development" ? "eval-source-map" : "source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./index.html"),
+      template: path.resolve(__dirname, "./src/index.html"),
     }),
   ],
   module: {
