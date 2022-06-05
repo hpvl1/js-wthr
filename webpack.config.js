@@ -29,5 +29,8 @@ module.exports = {
       },
     ],
   },
-  watch: true,
+  devServer: {
+    compress: true,
+    port: 9000,
+  },
 };
