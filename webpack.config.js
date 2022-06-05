@@ -8,6 +8,8 @@ module.exports = {
     filename: "bundle.js",
     clean: true,
   },
+  devtool:
+    process.env.NODE_ENV === "development" ? "eval-source-map" : "source-map",
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
