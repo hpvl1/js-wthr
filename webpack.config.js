@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
@@ -19,6 +20,9 @@ module.exports = {
       template: path.resolve(__dirname, "./src/index.html"),
     }),
     new MiniCssExtractPlugin(),
+    new webpack.DefinePlugin({
+      "process.env.API_KEY": JSON.stringify(process.env.API_KEY),
+    }),
   ],
   module: {
     rules: [
