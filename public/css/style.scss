@@ -32,10 +32,14 @@ div#map {
     font-size: 1.2rem;
   }
   
-  .list-city > ul > li:hover {
-    cursor: pointer;
-    transition: all 0.5s ease;
-    transform: scale(1.1);
+  .list-city > ul > li {
+
+    &:hover {
+      cursor: pointer;
+      transition: all 0.5s ease;
+      transform: scale(1.1);
+    }
+    
   }
 
   .form-wrap {
