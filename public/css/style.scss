@@ -26,12 +26,6 @@ div#map {
     flex: 0 50%;
   }
   
-  .form-wrap {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  
   .list-city > ul > li {
     max-width: 200px;
     line-height: 1.5;
@@ -42,4 +36,28 @@ div#map {
     cursor: pointer;
     transition: all 0.5s ease;
     transform: scale(1.1);
+  }
+
+  .form-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  .search-form {
+
+    &__input {
+        border-radius: 7px;
+        border: solid 1px #ccc;
+
+        &::placeholder {
+            color: #000;
+        }
+    }
+
+    &__button {
+        border-radius: 5px;
+        border: solid 2px #FFF;
+    }
+    
   }
