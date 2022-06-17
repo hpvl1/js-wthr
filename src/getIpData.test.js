@@ -11,7 +11,7 @@ describe("get data by ip", () => {
       lat: 55.7522,
     };
 
-    const fetchMock = global.fetch.mockImplementation(() =>
+    global.fetch.mockImplementation(() =>
       Promise.resolve({
         ok: true,
         json: () => Promise.resolve(coord),
@@ -20,7 +20,7 @@ describe("get data by ip", () => {
 
     const response = await getIpData();
 
-    expect(fetchMock).toHaveBeenCalledWith("https://ipapi.co/json/");
+    expect(global.fetch).toHaveBeenCalledWith("https://ipapi.co/json/");
     expect(response).toEqual(coord);
   });
 });
