@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1655483400317" clover="3.2.0">
+  <project timestamp="1655483400317" name="All files">
+    <metrics statements="70" coveredstatements="34" conditionals="37" coveredconditionals="25" methods="9" coveredmethods="8" elements="116" coveredelements="67" complexity="0" loc="70" ncloc="70" packages="1" files="4" classes="4"/>
+    <file name="getCityInput.js" path="C:\Users\andre\Desktop\js-wthr\src\getCityInput.js">
+      <metrics statements="16" coveredstatements="4" conditionals="10" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="cond" truecount="6" falsecount="4"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+    </file>
+    <file name="getCityWeather.js" path="C:\Users\andre\Desktop\js-wthr\src\getCityWeather.js">
+      <metrics statements="16" coveredstatements="4" conditionals="10" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="cond" truecount="6" falsecount="4"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+    </file>
+    <file name="getIpData.js" path="C:\Users\andre\Desktop\js-wthr\src\getIpData.js">
+      <metrics statements="12" coveredstatements="4" conditionals="10" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="cond" truecount="6" falsecount="4"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+    </file>
+    <file name="storage.js" path="C:\Users\andre\Desktop\js-wthr\src\storage.js">
+      <metrics statements="26" coveredstatements="22" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="2"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="18" type="stmt"/>
+      <line num="3" count="18" type="cond" truecount="1" falsecount="0"/>
+      <line num="4" count="18" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="7" count="16" type="stmt"/>
+      <line num="8" count="16" type="stmt"/>
+      <line num="9" count="16" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="15" type="cond" truecount="1" falsecount="0"/>
+      <line num="14" count="16" type="cond" truecount="1" falsecount="0"/>
+      <line num="15" count="5" type="stmt"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="17" count="15" type="cond" truecount="1" falsecount="0"/>
+      <line num="18" count="15" type="stmt"/>
+      <line num="19" count="15" type="stmt"/>
+      <line num="20" count="15" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
