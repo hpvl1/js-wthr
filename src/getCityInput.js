@@ -10,7 +10,7 @@ export async function getCityInput(cityName) {
       const data = await response.json();
       return data;
     }
-  } catch (e) {
-    console.log(e);
+  } catch (error) {
+    console.error(error);
   }
 }
