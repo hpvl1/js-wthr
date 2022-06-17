@@ -1,6 +1,5 @@
 import { getCityInput } from "./getCityInput";
 import { createCard } from "./createCard";
-import { readStorage, showStorage } from "./storage";
 
 export function cityClickListener() {
   const cityList = document.querySelectorAll("div.list-city > ul > li");
