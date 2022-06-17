@@ -1,6 +1,6 @@
 name: Build and Deploy
 on: [push]
-permissions: 
+permissions:
   contents: write
 jobs:
   build-and-deploy:
@@ -17,6 +17,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy.
+          folder: dist # The folder the action should deploy
