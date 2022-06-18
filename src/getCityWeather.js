@@ -3,7 +3,7 @@ export async function getCityWeather(ipData) {
 
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${ipData.latitude}&lon=${ipData.longitude}&lang=ru&units=metric&appid=${MY_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${ipData.latitude}&lon=${ipData.longitude}&lang=ru&units=metric&appid=${MY_KEY}`
     );
 
     if (response.ok) {

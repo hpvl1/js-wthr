@@ -42,7 +42,7 @@ describe("fgf", () => {
     const response = await getCityWeather(ipData);
 
     expect(global.fetch).toHaveBeenCalledWith(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${ipData.latitude}&lon=${ipData.longitude}&lang=ru&units=metric&appid=${MY_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${ipData.latitude}&lon=${ipData.longitude}&lang=ru&units=metric&appid=${MY_KEY}`
     );
     expect(response).toStrictEqual(fakeData);
   });
