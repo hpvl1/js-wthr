@@ -8,6 +8,9 @@
     "lint": "prettier --check . && eslint .",
     "lint:fix": "prettier --write . && eslint . --fix",
     "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy:web": "npm run build && gh-pages -d dist",
+    "deploy:coverage": "npm run test:coverage && gh-pages -d coverage/lcov-report",
     "build": "webpack --node-env production",
     "dev": "webpack serve --node-env development"
   },
