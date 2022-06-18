@@ -36,7 +36,7 @@ describe("get city weather from input", () => {
     const response = await getCityInput(cityName);
 
     expect(fetchMock).toHaveBeenCalledWith(
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=ru&units=metric&appid=${MY_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=ru&units=metric&appid=${MY_KEY}`
     );
 
     expect(response).toEqual(fakeData);
