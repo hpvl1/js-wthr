@@ -23,13 +23,11 @@ export async function weatherApp(el) {
 
   container.innerHTML += `
   <div class="form-wrap">
-      <div class="form">
           <form class="search-form">
               <label class="search-form__label">Город: </label>
               <input class="search-form__input" type="text" placeholder="Введите название города" required />
               <button class="search-form__button">Отправить</button>
           </form>
-      </div>
   </div>
   `;
 
