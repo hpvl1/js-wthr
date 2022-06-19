@@ -9,7 +9,11 @@ describe("fgf", () => {
     global.fetch = jest.fn();
   });
 
-  it("112", async () => {
+  it("it's a function", () => {
+    expect(getCityWeather).toBeInstanceOf(Function);
+  });
+
+  it("function return city weather", async () => {
     const ipData = {
       longitude,
       latitude,
