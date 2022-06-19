@@ -15,6 +15,14 @@ describe("test localStorage", () => {
     localStorage.setItem("city", JSON.stringify(items));
   });
 
+  it("readStorage it's a function", () => {
+    expect(readStorage).toBeInstanceOf(Function);
+  });
+
+  it("saveStorage it's a function", () => {
+    expect(saveStorage).toBeInstanceOf(Function);
+  });
+
   it("read LocalStorage", () => {
     const items = ["Москва", "Санкт-Петербург", "Иваново"];
     localStorage.setItem("city", JSON.stringify(items));
