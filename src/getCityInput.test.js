@@ -7,6 +7,10 @@ describe("get city weather from input", () => {
     global.fetch = jest.fn();
   });
 
+  it("it's a function", () => {
+    expect(getCityInput).toBeInstanceOf(Function);
+  });
+
   it("function return data weather", async () => {
     const MY_KEY = "56f47affbfbb9ca1677d4f24e14ea341";
 
