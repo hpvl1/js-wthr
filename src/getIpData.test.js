@@ -5,6 +5,10 @@ describe("get data by ip", () => {
     global.fetch = jest.fn();
   });
 
+  it("it's a function", () => {
+    expect(getIpData).toBeInstanceOf(Function);
+  });
+
   it("return user location coord", async () => {
     const coord = {
       lon: 37.6156,
@@ -23,4 +27,14 @@ describe("get data by ip", () => {
     expect(global.fetch).toHaveBeenCalledWith("https://ipapi.co/json/");
     expect(response).toEqual(coord);
   });
+
+  // it("the fetch fails with an error", async () => {
+  //   try {
+  //     await getIpData();
+  //   } catch (e) {
+  //     expect(e).toMatch('error');
+  //   }
+  //   expect.assertions(1);
+  // });
+
 });
