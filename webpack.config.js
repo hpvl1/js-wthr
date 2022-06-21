@@ -35,19 +35,15 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      {
-        test: /\.scss$/,
+        test: /.s?css$/,
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
-    optimization: {
-      minimizer: [`...`, new CssMinimizerPlugin()],
-    },
   },
+  // optimization: {
+  //   minimizer: [`...`, new CssMinimizerPlugin()],
+  // },
   devServer: {
     compress: true,
     port: 9000,
