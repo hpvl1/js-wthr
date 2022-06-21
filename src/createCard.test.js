@@ -46,32 +46,12 @@ describe("test create card", () => {
 </div>
 `;
 
-  const ymaps = {
-    ready() {
-      return null;
-    },
-  };
-  const spy = jest.spyOn(ymaps, "ready");
-
-  const init = jest.fn();
-  const createMap = jest.fn();
-
   it("test UI after get weather data", () => {
     createCard(el, weatherData);
-    expect(el.querySelector(".weather-wrap").toBeTruthy());
-    expect(spy).toHaveBeenCalled();
-    expect(el.querySelector(".city-info").toBeTruthy());
-    expect(el.querySelector(".city").toBeTruthy());
-    expect(el.querySelector(".temp").toBeTruthy());
-    expect(el.querySelector(".weather").toBeTruthy());
-    // expect(createMap).toHaveBeenCalled();
-    spy.mockRestore();
+    expect(el.querySelector(".weather-wrap")).toBeTruthy();
+    expect(el.querySelector(".city-info")).toBeTruthy();
+    expect(el.querySelector(".city")).toBeTruthy();
+    expect(el.querySelector(".temp")).toBeTruthy();
+    expect(el.querySelector(".weather")).toBeTruthy();
   });
-
-  //   it("123", () => {
-  //     createMap(el, weatherData);
-  //     const map = document.createElement("div");
-  //     map.setAttribute("id", "map");
-  //     el.querySelector(".weather-wrap").append(map);
-  //   });
 });
