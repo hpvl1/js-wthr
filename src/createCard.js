@@ -31,43 +31,14 @@ function createMap(el, weatherData) {
   el.querySelector(".weather-wrap").append(map);
 
   try {
-    ymaps
-      .load()
-      .then((maps) => {
-        console.log("then(1): ", maps);
-        const map = new maps.Map("map", {
-          center: [weatherData.coord.lat, weatherData.coord.lon],
-          zoom: 12,
-        });
-        return maps;
-      })
-      .then((maps) => {
-        const myPlacemark = new maps.Placemark([
-          weatherData.coord.lat,
-          weatherData.coord.lon,
-        ]);
-        // console.log("myPlacemark: ", myPlacemark);
-        console.log(maps);
-        // maps.geoObject.addon(myPlacemark);
+    ymaps.load().then((maps) => {
+      const map = new maps.Map("map", {
+        center: [weatherData.coord.lat, weatherData.coord.lon],
+        zoom: 12,
       });
+      return maps;
+    });
   } catch (error) {
     console.error("Failed to load Yandex Maps", error);
   }
-
-  // ymaps.ready(init);
-
-  // function init() {
-  //   // Создание карты.
-  //   var myMap = new ymaps.Map("map", {
-  //     // Координаты центра карты.
-  //     // Порядок по умолчанию: «широта, долгота».
-  //     center: [weatherData.coord.lat, weatherData.coord.lon],
-  //     // Уровень масштабирования. Допустимые значения: от 0 (весь мир) до 19.
-  //     zoom: 12,
-  //   });
-
-  // var myPlacemark = new ymaps.Placemark([weatherData.coord.lat, weatherData.coord.lon]);
-
-  // myMap.geoObjects.add(myPlacemark);
-  // maps.geoObjects.add(myPlacemark);
 }
