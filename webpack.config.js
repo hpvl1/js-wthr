@@ -41,9 +41,9 @@ module.exports = {
       },
     ],
   },
-  // optimization: {
-  //   minimizer: [`...`, new CssMinimizerPlugin()],
-  // },
+  optimization: {
+    minimizer: [`...`, new CssMinimizerPlugin()],
+  },
   devServer: {
     compress: true,
     port: 9000,
