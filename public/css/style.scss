@@ -1,0 +1,63 @@
+div#map {
+  margin: 0 auto;
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  div#map {
+    width: 100%;
+  }
+}
+
+.weather-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.city-info {
+  flex: 0 50%;
+}
+
+.list-city {
+  flex: 0 50%;
+}
+
+.list-city > ul > li {
+  max-width: 200px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.list-city > ul > li {
+  &:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+  }
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.search-form {
+  &__input {
+    border-radius: 7px;
+    border: solid 1px #ccc;
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+
+  &__button {
+    border-radius: 5px;
+    border: solid 2px #fff;
+  }
+}

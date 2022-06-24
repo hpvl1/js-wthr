@@ -3,14 +3,14 @@ export async function getCityInput(cityName) {
 
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=ru&units=metric&appid=${MY_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=ru&units=metric&appid=${MY_KEY}`
     );
 
     if (response.ok) {
       const data = await response.json();
       return data;
     }
-  } catch (e) {
-    console.log(e);
+  } catch (error) {
+    console.error(error);
   }
 }

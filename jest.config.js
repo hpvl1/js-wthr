@@ -4,6 +4,7 @@
  */
 
 module.exports = {
+  setupFiles: ["jest-localstorage-mock"],
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -42,7 +43,15 @@ module.exports = {
   // ],
 
   // An object that configures minimum threshold enforcement for coverage results
-  // coverageThreshold: undefined,
+
+  coverageThreshold: {
+    global: {
+      branches: 60,
+      functions: 50,
+      lines: 60,
+      statements: 60,
+    },
+  },
 
   // A path to a custom dependency extractor
   // dependencyExtractor: undefined,
